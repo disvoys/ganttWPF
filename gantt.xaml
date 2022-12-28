@@ -1,0 +1,142 @@
+﻿<UserControl x:Class="appCore.components.UI_perso.gantt"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:appCore.components.UI_perso"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Loaded="UserControl_Loaded">
+    <Grid Margin="20">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!-- TASKS-->
+        <Grid Grid.Column="0">
+            <StackPanel Margin="0 60 0 0" Name="listTaches">
+            </StackPanel>
+        </Grid>
+        
+        <!-- TIMELINE-->
+
+        <ScrollViewer Grid.Column="1"
+                      VerticalScrollBarVisibility="Visible"
+                      HorizontalScrollBarVisibility="Visible">
+            <Grid Grid.Column="1" Name="gridTimeLine">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                <Border Background="Black" Grid.ColumnSpan="90" Name="borderToBeColored"/>
+                <Grid Grid.Row="4" Panel.ZIndex="1"
+                      Name="gridBorders"                        
+                      Grid.ColumnSpan="90">
+                </Grid>
+
+                </Grid>
+        </ScrollViewer>
+     
+    </Grid>
+</UserControl>
